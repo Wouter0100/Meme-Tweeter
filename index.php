@@ -5,7 +5,7 @@ require_once 'phpquery.php';
 require_once 'provider.php';
 require_once 'config.php';
 
-$db = new mysqli($twitter['hostname'], $twitter['username'], $twitter['password'], $twitter['database']);
+$db = new mysqli($mysql['hostname'], $mysql['username'], $mysql['password'], $mysql['database']);
 
 if ($db->connect_error) {
     die('Connect Error (' . $db->connect_errno . ') ' . $db->connect_error);
