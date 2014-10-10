@@ -3,6 +3,7 @@
 require_once 'twitter.php';
 require_once 'phpquery.php';
 require_once 'provider.php';
+require_once 'config.php';
 
 $db = new mysqli($twitter['hostname'], $twitter['username'], $twitter['password'], $twitter['database']);
 
